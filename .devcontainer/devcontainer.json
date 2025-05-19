@@ -1,0 +1,9 @@
+{
+  "name": "Lisp Dev",
+  "image": "debian:bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:1": {},
+    "ghcr.io/devcontainers/features/sbcl:1": {}
+  },
+  "postCreateCommand": "apt-get update && apt-get install -y curl && curl -O https://beta.quicklisp.org/quicklisp.lisp"
+}
